@@ -33,7 +33,7 @@ SkillSwap соединяет людей, которые могут научит�
 Требуется только **Docker** и **Docker Compose**.
 
 ```bash
-git clone https://github.com/<your-username>/skillswap.git
+git clone https://github.com/Morfi/skillswap.git
 cd skillswap
 cp .env.example .env          # при желании поменяйте пароли и JWT_SECRET
 docker compose up -d --build
