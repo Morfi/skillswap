@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillSwap — обмен навыками</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🔁 SkillSwap</div>
+    <nav id="nav" class="hidden">
+      <button data-view="catalog">Каталог</button>
+      <button data-view="matches">Подбор</button>
+      <button data-view="skills">Мои навыки</button>
+      <button data-view="exchanges">Обмены</button>
+      <button data-view="profile">Профиль</button>
+      <button data-view="admin" class="admin-only hidden">Админ</button>
+    </nav>
+    <div id="userbox" class="userbox hidden">
+      <span id="username"></span> <span id="rolebadge" class="badge"></span>
+      <button id="logout" class="ghost">Выйти</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <dialog id="modal"><form method="dialog" id="modal-form"></form></dialog>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
